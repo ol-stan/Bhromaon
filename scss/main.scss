@@ -53,7 +53,7 @@ a {
     display: block;
 
     &:hover {
-        text-decoration: none;
+        text-decoration: underline;
     }
 }
 
@@ -180,7 +180,7 @@ h2 {
         letter-spacing: 1px;
 
         &:after {
-            content: url(/images/search.png);
+            content: url(../images/search.png);
             position: absolute;
             line-height: 0;
             top: 16px;
@@ -207,7 +207,13 @@ h2 {
         text-decoration: none;
         display: inline-block;
         padding-bottom: 18px;
-        z-index: 1;
+        z-index: 0;
+
+        &:hover {
+            text-decoration: none;
+            transform: translateY(2px);
+            transition-duration: 0.3s;
+        }
     }
 
     &:after {
@@ -242,6 +248,10 @@ h2 {
         letter-spacing: 1px;
         display: inline-block;
         padding: 30px 0;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -338,6 +348,7 @@ h2 {
 
     &:hover {
         transform: scale(0.98);
+        text-decoration: none;
     }
 
 
@@ -394,6 +405,10 @@ h2 {
         font-size: 36px;
         font-weight: normal;
         line-height: 85px;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -534,7 +549,6 @@ h2 {
     }
 }
 
-
 @media screen and (max-width: 768px) {
 
     .mainer {
@@ -573,7 +587,7 @@ h2 {
     .text-block {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 20px 0;
     }
 
     .nav-helper {

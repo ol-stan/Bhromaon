@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 h1,
@@ -186,7 +186,7 @@ h2 {
 }
 
 .search-form__button:after {
-  content: url(/images/search.png);
+  content: url(../images/search.png);
   position: absolute;
   line-height: 0;
   top: 16px;
@@ -212,7 +212,15 @@ h2 {
   text-decoration: none;
   display: inline-block;
   padding-bottom: 18px;
-  z-index: 1;
+  z-index: 0;
+}
+
+.scroll__link:hover {
+  text-decoration: none;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .scroll:after {
@@ -248,6 +256,10 @@ h2 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 30px 0;
+}
+
+.logo__link:hover {
+  text-decoration: none;
 }
 
 .nav {
@@ -343,6 +355,7 @@ h2 {
 .button:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+  text-decoration: none;
 }
 
 .button--bg {
@@ -398,6 +411,10 @@ h2 {
   font-size: 36px;
   font-weight: normal;
   line-height: 85px;
+}
+
+.nav-helper__link:hover {
+  text-decoration: none;
 }
 
 .spain--appartament {
@@ -557,7 +574,7 @@ h2 {
   .text-block {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
   }
   .nav-helper__text {
     display: none;
