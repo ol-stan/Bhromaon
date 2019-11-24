@@ -68,7 +68,7 @@ h2 {
 .mainer {
   max-width: 1110px;
   margin: 0 auto;
-  text-align: center;
+  padding: 0 10px;
 }
 
 .mainer--header {
@@ -104,6 +104,7 @@ h2 {
   height: 100vh;
   background-size: cover;
   position: relative;
+  text-align: center;
 }
 
 .header__title {
@@ -171,17 +172,20 @@ h2 {
 .search-form__button {
   display: inline-block;
   height: 60px;
-  line-height: 60px;
-  color: #ffffff;
-  background: #5474fd;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 14px;
-  font-weight: normal;
   text-decoration: none;
   padding: 0 50px 0 33px;
   border-style: none;
   border: 2px solid #ffffff;
   position: relative;
+  background: #5474fd;
+}
+
+.search-form__button--text {
+  line-height: 60px;
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
   letter-spacing: 1px;
 }
 
@@ -252,6 +256,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
 }
 
 .logo__link {
@@ -276,6 +281,8 @@ h2 {
   padding: 20px 0;
   -webkit-transition: all .3s;
   transition: all .3s;
+  position: absolute;
+  right: 10px;
 }
 
 .nav__list {
@@ -409,6 +416,7 @@ h2 {
 .nav-helper__item {
   padding: 100px 10px;
   position: relative;
+  text-align: center;
 }
 
 .nav-helper__item:after {
@@ -525,7 +533,7 @@ h2 {
   font-size: 20px;
   text-transform: uppercase;
   line-height: 26px;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .text {
@@ -533,6 +541,7 @@ h2 {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
+  padding: 0 0 10px 0;
 }
 
 .footer {
@@ -598,6 +607,10 @@ h2 {
   }
   .search-form__button {
     padding: 0 45px 0 10px;
+    width: 40px;
+  }
+  .search-form__button--text {
+    display: none;
   }
   .mainer--wrapper,
   .review-block {
