@@ -186,15 +186,20 @@ h2 {
 }
 
 .search-form__button:after {
-  content: url(../images/search.png);
+  content: '';
+  background-image: url(../images/sp-img-min.png);
+  height: 30px;
+  width: 30px;
   position: absolute;
   line-height: 0;
   top: 16px;
   right: 14px;
+  background-position: 8px -16px;
 }
 
 .search-form__button:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .search-form__button:focus {
@@ -202,7 +207,9 @@ h2 {
 }
 
 .scroll {
-  position: relative;
+  position: absolute;
+  bottom: 20%;
+  right: calc(50% - 60px);
 }
 
 .scroll__link {
@@ -260,6 +267,7 @@ h2 {
 
 .logo__link:hover {
   text-decoration: none;
+  opacity: 0.8;
 }
 
 .nav {
@@ -382,6 +390,22 @@ h2 {
       justify-content: space-around;
 }
 
+.nav-helper__link {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Aleo', serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 85px;
+  position: relative;
+}
+
+.nav-helper__link:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
 .nav-helper__item {
   padding: 100px 10px;
 }
@@ -401,20 +425,6 @@ h2 {
 
 .nav-helper__icon--up {
   color: #00a2ff;
-}
-
-.nav-helper__link {
-  display: block;
-  text-decoration: none;
-  color: #ffffff;
-  font-family: 'Aleo', serif;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 85px;
-}
-
-.nav-helper__link:hover {
-  text-decoration: none;
 }
 
 .spain--appartament {
@@ -572,9 +582,9 @@ h2 {
     width: 100%;
   }
   .text-block {
-    width: 100%;
-    margin: 0;
-    padding: 20px 0;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px 10px;
   }
   .nav-helper__text {
     display: none;
@@ -585,6 +595,13 @@ h2 {
   .chose-us__img-block,
   .chose-us__text-block {
     width: 100%;
+    padding: 20px 0;
+  }
+  .chose-us__subtitle {
+    padding: 50px 10px;
+  }
+  .chose-us__text {
+    padding: 10px;
   }
   .toggler {
     width: 40px;

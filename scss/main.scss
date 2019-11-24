@@ -180,15 +180,20 @@ h2 {
         letter-spacing: 1px;
 
         &:after {
-            content: url(../images/search.png);
+            content: '';
+            background-image: url(../images/sp-img-min.png);
+            height: 30px;
+            width: 30px;
             position: absolute;
             line-height: 0;
             top: 16px;
             right: 14px;
+            background-position: 8px -16px;
         }
 
         &:hover {
             cursor: pointer;
+            opacity: 0.8;
         }
 
         &:focus {
@@ -198,7 +203,9 @@ h2 {
 }
 
 .scroll {
-    position: relative;
+    position: absolute;
+    bottom: 20%;
+    right: calc(50% - 60px);
 
     &__link {
         font-size: 14px;
@@ -251,6 +258,7 @@ h2 {
 
         &:hover {
             text-decoration: none;
+            opacity: 0.8;
         }
     }
 }
@@ -375,6 +383,22 @@ h2 {
         justify-content: space-around;
     }
 
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Aleo', serif;
+        font-size: 36px;
+        font-weight: normal;
+        line-height: 85px;
+        position: relative;
+
+        &:hover {
+            text-decoration: none;
+            opacity: 0.8;
+        }
+    }
+
     &__item {
         padding: 100px 10px;
     }
@@ -394,26 +418,10 @@ h2 {
         &--up {
             color: #00a2ff;
         }
-
-    }
-
-    &__link {
-        display: block;
-        text-decoration: none;
-        color: #ffffff;
-        font-family: 'Aleo', serif;
-        font-size: 36px;
-        font-weight: normal;
-        line-height: 85px;
-
-        &:hover {
-            text-decoration: none;
-        }
     }
 }
 
 .spain {
-
 
     &--appartament {
         background-image: url(../images/bg-spain-appartaments.jpg);
@@ -422,15 +430,12 @@ h2 {
         background-size: cover;
     }
 
-
     &--nature {
         background-image: url(../images/bg-spain-nature.jpg);
         width: 100%;
         -webkit-background-size: cover;
         background-size: cover;
     }
-
-
 }
 
 .text-block {
@@ -492,11 +497,8 @@ h2 {
     text-align: start;
     background: #333333;
 
-
     &__text {
         padding: 0 53px;
-
-
     }
 }
 
@@ -514,7 +516,6 @@ h2 {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-
 }
 
 .footer {
@@ -585,9 +586,9 @@ h2 {
     }
 
     .text-block {
-        width: 100%;
-        margin: 0;
-        padding: 20px 0;
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px 10px;
     }
 
     .nav-helper {
@@ -604,6 +605,18 @@ h2 {
     .chose-us__img-block,
     .chose-us__text-block {
         width: 100%;
+        padding: 20px 0;
+    }
+
+    .chose-us {
+
+        &__subtitle {
+            padding: 50px 10px;
+        }
+
+        &__text {
+            padding: 10px;
+        }
     }
 
     .toggler {
