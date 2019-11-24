@@ -408,6 +408,22 @@ h2 {
 
 .nav-helper__item {
   padding: 100px 10px;
+  position: relative;
+}
+
+.nav-helper__item:after {
+  content: '';
+  background-image: url(../images/sp-img-min.png);
+  position: absolute;
+  top: 35px;
+  left: 135px;
+  height: 57px;
+  width: 304px;
+  background-position: -20px 0;
+}
+
+.nav-helper__item:last-of-type:after {
+  content: none;
 }
 
 .nav-helper__icon {
@@ -552,6 +568,12 @@ h2 {
 .social__icon:hover {
   color: #5474fd;
   cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-helper__item:after {
+    content: none;
+  }
 }
 
 @media screen and (max-width: 768px) {

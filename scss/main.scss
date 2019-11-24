@@ -401,6 +401,22 @@ h2 {
 
     &__item {
         padding: 100px 10px;
+        position: relative;
+
+        &:after {
+            content: '';
+            background-image: url(../images/sp-img-min.png);
+            position: absolute;
+            top: 35px;
+            left: 135px;
+            height: 57px;
+            width: 304px;
+            background-position: -20px 0;
+        }
+
+        &:last-of-type:after {
+            content: none;
+        }
     }
 
     &__icon {
@@ -547,6 +563,12 @@ h2 {
             color: #5474fd;
             cursor: pointer;
         }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav-helper__item:after {
+        content: none;
     }
 }
 
