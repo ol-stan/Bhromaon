@@ -583,6 +583,12 @@ h2 {
   .mainer--reviews {
     padding-bottom: 110px;
   }
+  .nav-helper__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .subtitle {
     padding: 30px 0;
   }
@@ -608,11 +614,8 @@ h2 {
     margin: 10px auto;
     padding: 20px 10px;
   }
-  .nav-helper__text {
-    display: none;
-  }
   .nav-helper__item {
-    padding: 50px 10px;
+    padding: 10px;
   }
   .chose-us__img-block,
   .chose-us__text-block {

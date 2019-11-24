@@ -585,6 +585,10 @@ h2 {
         }
     }
 
+    .nav-helper__wrapper {
+        flex-direction: column;
+    }
+
     .subtitle {
         padding: 30px 0;
     }
@@ -615,12 +619,8 @@ h2 {
 
     .nav-helper {
 
-        &__text {
-            display: none;
-        }
-
         &__item {
-            padding: 50px 10px;
+            padding: 10px;
         }
     }
 
